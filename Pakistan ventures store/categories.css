@@ -1,0 +1,151 @@
+body {
+  min-height: 100vh;
+  background-color: rgb(230, 230, 230);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* for the whole page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* for the navigation bar */
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.icon a svg {
+  width: 33px;
+  padding-left: 15px;
+}
+/* media query for the navigation bar including (810,700,500)px  */
+@media (max-width: 810px) {
+  .header {
+    padding: 20px 60px;
+  }
+
+  .logo {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px 40px;
+  }
+
+  .logo {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .navbar a {
+    font-size: 15px;
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    padding: 20px 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+hr {
+  width: 86%;
+  margin-left: 7%;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 2px solid;
+}
+.cat {
+  font-size: 250%;
+  color: gray;
+  text-align: center;
+  margin: 100px 0;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 10% 10%;
+}
+.button_categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10% 10%;
+}
+.firstbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.firstbox h4 {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+.pic {
+  width: 70%;
+  height: 120px;
+  border-radius: 10px;
+  background-color: rgb(33, 33, 34);
+}
+.topcategories {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(149, 153, 153);
+  border-radius: 10px;
+}
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(134, 134, 134);
+  text-align: center;
+}
+.mainfoot {
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-evenly;
+  text-align: left;
+}
+footer p {
+  margin-top: 15px;
+}
